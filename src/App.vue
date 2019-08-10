@@ -1,16 +1,22 @@
 <template lang="pug">
+
   #app
-    #nav
+    // Navbar
+    .nav
       .nav-left
         .logo
           router-link(to='/')
-            img(src="./assets/logo.png", alt="alt")
+            img(src="./assets/icon.png", alt="alt")
       .nav-right
-        router-link(to="/") Home | 
-        router-link(to="/about") About | 
-        router-link(to="/work") Work | 
+        router-link(to="/") Home
+        router-link(to="/about") About
+        router-link(to="/work") Work
         router-link(to="/contact") Contact 
-    router-view
+    // Social
+    .social
+      
+    .container 
+      router-view
 </template>
 
 <style lang="scss">
@@ -22,7 +28,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
   background-image: url('./assets/Home.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -32,8 +38,8 @@
   height: 100vh;
 }
 
-#nav {
-  padding: 0rem;
+.nav {
+  padding: .5rem 1rem;
   font-weight: normal;
   background-color: rgba($color: #000000, $alpha: .5);
   display: flex;
@@ -48,9 +54,9 @@
   }
   .nav-right {
     a {
-      font-weight: bold;
-      color: #2c3e50;
       text-decoration: none;
+      margin: .5rem;
+      color: #fff;
       &.router-link-exact-active {
         border-bottom: 1px solid #ccc
       }
