@@ -2,67 +2,33 @@
 
 body {
     margin: 0;
-    padding: 0
-}
-
-#app {
-    font-family: 'Cairo', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #fff;
-    background-image: url('./assets/Home.png');
+    padding: 0;
+    background-image: url('./assets/Home.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0;
-    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     height: 100vh;
+    overflow: hidden;
 }
 
-.nav {
-    padding: .5rem 1rem;
-    font-weight: normal;
-    background-color: rgba($color: #000000, $alpha: .5);
+.home,
+.work,
+.about,
+.contact {
+    width: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    .nav-left {
-        .logo {
-            img {
-            width: 4rem
-            }
-        }
-    }
-    .nav-right {
-        a {
-            text-decoration: none;
-            margin: .5rem;
-            color: #fff;
-            &.router-link-exact-active {
-            border-bottom: 1px solid #ccc
-            }
-        }
-  
-    }
-}
-
-.social-list {
-    list-style: none;
-    .social-item {
-        img {
-            width: 1rem
-        }
-    } 
+    justify-content: center;
 }
 
 
 .slide-fade-enter-active {
     transition: all 1s ease;
 }
-// .slide-fade-leave-active {
-//     transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-// }
 .slide-fade-enter, .slide-fade-leave-to {
     transform: translateY(10px);
     opacity: 0;
