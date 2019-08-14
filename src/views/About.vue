@@ -1,17 +1,20 @@
-<template lang='pug'>
-  .about
-    .top
-      h1 Ahmed Samir
-      h2 UX/UI Designer
-      p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-    .bottom
-      router-link(to="/skills") Skills
-        img(src="../assets/SVG/down.svg", alt="alt")
+<template>
+  <div class="about">
+    <div class="top">
+      <h1>Ahmed Samir</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    </div>
+    <div class="bottom">
+      <router-link to="/skills">
+        Skills
+        <img src="../assets/SVG/down.svg" alt="alt">
+      </router-link>
+    </div>
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Home from '@/components/Skills.vue'
 
 export default {
   name: 'about'
@@ -24,22 +27,16 @@ export default {
   position: relative;
   .top {
     text-align: center;
+    margin-bottom: 8rem;
     h1 {
       font-size: 4rem;
       font-weight: normal;
       letter-spacing: 3px;
       margin: 0
     }
-
-    h2 {
-      font-size: 2rem;
-      font-weight: normal;
-      margin: -.5rem 0;
-    }
-
     p {
       font-size: 1.5rem;
-      margin: 1rem auto;
+      margin: 0 auto 1rem ;
       width: 60%;
     }
   }

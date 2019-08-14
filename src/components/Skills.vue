@@ -1,16 +1,43 @@
-<template lang='pug'>
-  .skills
-    .top
-        router-link(to="/about") 
-            img(src="../assets/SVG/up.svg", alt="alt")
-            | About
-    .bottom
-        
+
+<template>
+  <div class="skills">
+    <div class="top">
+      <router-link to="/about">
+        <img src="../assets/SVG/up.svg">
+        About
+      </router-link>
+    </div>
+    <div class="bottom">
+      <div class="row">
+        <img src="../assets/SVG/html5.svg">
+        <img src="../assets/SVG/css.svg">
+        <img src="../assets/SVG/Bootstrap.svg">
+      </div>
+      <div class="row">
+        <img src="../assets/SVG/Photoshop.png">
+        <img src="../assets/SVG/adobe-xd.svg">
+        <img src="../assets/SVG/js.png">
+        <img src="../assets/SVG/logo.png">
+      </div>
+  
+      <!-- <img v-for="image in images" :key="image.length" :src="image.src" :alt="image.alt" /> -->
+    </div>
+    
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Skills'
+  //  data () {
+  //   return {
+  //     images: [
+  //       { src: '../assets/SVG/html5.svg', alt: 'HTML5' },
+  //       { src: '../assets/SVG/css.svg', alt: 'CSS3' },
+  //       { src: '../assets/SVG/Bootstrap.svg', alt: 'Bootstrap' }
+  //     ]
+  //   }
+  // }
 }
 </script>
 
@@ -33,6 +60,16 @@ export default {
       img {
         width: 1.5rem
       }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 5rem;
+      margin: 1rem
     }
   }
 }
