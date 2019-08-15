@@ -3,38 +3,54 @@
     <div class="row">
       <div class="project-box">
         <img src="../assets/2.png" alt="" srcset="">
-        <transition name="slide-fade">
-          <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach">
-            Test
-          </a>
-        </transition>
+        <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach" target="_blank">
+          Test
+        </a>
       </div>
       <div class="project-box">
         <img src="../assets/1.png" alt="" srcset="">
+        <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach" target="_blank">
+          Test
+        </a>
       </div>
+      <div class="project-box">
+        <img src="../assets/1.png" alt="" srcset="">
+        <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach" target="_blank">
+          Test
+        </a>
+      </div>
+      <div class="project-box">
+        <img src="../assets/1.png" alt="" srcset="">
+        <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach" target="_blank">
+          Test
+        </a>
+      </div> 
     </div>
+
     <div class="row">
       <div class="project-box">
         <img src="../assets/1.png" alt="" srcset="">
+        <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach" target="_blank">
+          Test
+        </a>
       </div>
       <div class="project-box">
         <img src="../assets/1.png" alt="" srcset="">
-      </div>
-    </div>
-    <div class="row">
-      <div class="project-box">
-        <img src="../assets/1.png" alt="" srcset="">
+        <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach" target="_blank">
+          Test
+        </a>
       </div>
       <div class="project-box">
         <img src="../assets/1.png" alt="" srcset="">
-      </div>
-    </div>
-    <div class="row">
-      <div class="project-box">
-        <img src="../assets/1.png" alt="" srcset="">
+        <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach" target="_blank">
+          Test
+        </a>
       </div>
       <div class="project-box">
         <img src="../assets/1.png" alt="" srcset="">
+        <a href="https://www.behance.net/gallery/79028719/Al_Arish-Beach" target="_blank">
+          Test
+        </a>
       </div>
     </div>
   </div>
@@ -50,7 +66,7 @@ export default {
   .work {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     overflow-y: auto;
     .row {
@@ -60,26 +76,34 @@ export default {
       justify-content: center;
       .project-box {
         margin: 1rem;
-        width: 40%;
+        width: 17%;
         position: relative;
+        display: flex;
         overflow: hidden;
         img {
           width: 100%;
           height: 100%;
+          transition: all .3s ease-in-out;
         }
         a {
           position: absolute;
           left: 0;
-          bottom: -500px;
-          background-color: rgba($color: #000000, $alpha: .5);
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          bottom: 0;
+          background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.7));
           width: 100%;
           height: 100%;
-          transition: all .3s;
-          text-decoration: none
+          
+          text-decoration: none;
+          color: #fff;
+          font-size: 2rem;
+          padding: 1rem
         }
         &:hover {
-          a {
-            top: 0;
+          img {
+            transform: rotate(10deg) scale(1.2); 
           }
         }
       }
