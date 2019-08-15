@@ -12,6 +12,7 @@
         <img src="../assets/SVG/html5.svg">
         <img src="../assets/SVG/css.svg">
         <img src="../assets/SVG/Bootstrap.svg">
+        <img src="../assets/Sass.png">
       </div>
       <div class="row">
         <img src="../assets/SVG/Photoshop.png">
