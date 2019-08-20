@@ -58,9 +58,10 @@ export default {
       color: #fff;
       text-decoration: none;
       font-size: 1.5rem;
-      margin-bottom: .5rem;
+      
       img {
-        width: 1.5rem
+        width: 1.5rem;
+        margin-bottom: .5rem;
       }
     }
   }
