@@ -1,14 +1,14 @@
 <template>
   <div class="home">
-    <div class="home-info">
+    <div class="home-info text-center text-lg-left">
       <h1>Ahmed Samir</h1> 
       <h2>UX/UI Designer</h2> 
-      <div class="links">
+      <div class="links text-center text-lg-left">
         <router-link to="/work">My Work</router-link>
         <a href="https://drive.google.com/open?id=1nikUMkHOTT0-USTdoDR4TMUcaD5It3Hc" download target='_blank'>Download CV</a>
       </div>
     </div>
-    <img alt="Vue logo" src="../assets/photo.png">
+    <img alt="Vue logo" src="../assets/photo.png" class="d-none d-lg-flex">
   </div>
 </template>
 
@@ -30,6 +30,7 @@ export default {
           font-size: 4rem;
           font-weight: normal;
           letter-spacing: 3px;
+          margin-bottom: 1rem;
           margin: 0
         }
 
@@ -37,11 +38,6 @@ export default {
           font-size: 2rem;
           font-weight: normal;
           margin-top: 0
-        }
-
-        p {
-          font-size: 1.5rem;
-          width: 60%
         }
 
         .links {
@@ -71,11 +67,33 @@ export default {
             }
           }
         }
+        @media (max-width: 991.99px) {
+          h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem
+          }
+          h2 {
+            font-size: 1.5rem;
+          }
+          .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+              font-size: .8rem;
+            }
+          }
+        }
       }
 
       img {
         width: 25rem;
         margin-bottom: 5rem
+      }
+      @media  (max-width: 1199px) {
+        img {
+          width: 18rem;
+        }
       }
   }  
 </style>

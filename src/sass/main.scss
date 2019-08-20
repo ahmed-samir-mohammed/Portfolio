@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
 
 
 body {
@@ -13,6 +15,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
     overflow: hidden;
+    transition: all .3s
 }
 
 .home,
@@ -25,6 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 
@@ -35,3 +39,50 @@ body {
     transform: translateY(10px);
     opacity: 0;
 }
+
+.modal {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    .modal-dialog {
+        width: 30rem;
+        .modal-header {
+            display: flex;
+            align-items: center;
+            h5 {
+                margin-bottom: 0;
+            }
+            .btn-outline-danger {
+                border: 0 !important;
+                background: none !important;
+                img {
+                    width: 1rem;
+                }
+                &:hover {
+                    background: none !important;
+                    border: 0 !important
+                }
+            }
+        }
+        ul {
+            li {
+                margin-bottom: 1rem;
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: #000;
+                    text-decoration: none;
+                    img {
+                        width: 2rem;
+                        margin-right: 1rem
+                    }
+                }
+            }
+        }
+        footer {
+            display: none
+        }
+    }
+}
+
+

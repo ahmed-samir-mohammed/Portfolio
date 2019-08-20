@@ -32,12 +32,23 @@ export default {
       font-size: 4rem;
       font-weight: normal;
       letter-spacing: 3px;
-      margin: 0
+      margin: 1rem;
     }
     p {
       font-size: 1.5rem;
       margin: 0 auto 1rem ;
       width: 60%;
+    }
+    @media (max-width: 991.99px) {
+      h1 {
+        font-size: 3rem;
+        
+      }
+      p {
+        font-size: 1.2rem;
+        margin: 1rem auto 1rem;
+        width: 80%;
+      }
     }
   }
   .bottom {
@@ -53,7 +64,20 @@ export default {
       text-decoration: none;
       font-size: 1.5rem;
       img {
-        width: 1.5rem
+        width: 1.5rem;
+        margin-top: .5rem;
+      }
+    }
+  }
+  @media (max-width: 991.99px) {
+    .bottom {
+      a {
+        left: 45%;
+        font-size: 1rem;
+        img {
+          width: 1.2rem;
+          margin-top: .5rem;
+        }
       }
     }
   }

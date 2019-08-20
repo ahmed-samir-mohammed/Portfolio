@@ -58,6 +58,7 @@ export default {
       color: #fff;
       text-decoration: none;
       font-size: 1.5rem;
+      margin-bottom: .5rem;
       img {
         width: 1.5rem
       }
@@ -69,8 +70,25 @@ export default {
     align-items: center;
     flex-direction: column;
     img {
-      width: 5rem;
+      width: 4rem;
       margin: 1rem
+    }
+  }
+  @media (max-width: 991.99px) {
+    .top {
+      a {
+        left: 45%;
+        font-size: 1rem;
+        img {
+          width: 1.2rem;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+    .bottom {
+      img {
+        width: 2.5rem;
+      }
     }
   }
 }
